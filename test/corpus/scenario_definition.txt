@@ -1,6 +1,6 @@
-===
+==================
 Scenario with text
-===
+==================
 
 Feature: this is a test
 
@@ -15,10 +15,10 @@ Scenario: i am a test Scenario
     (scenario_definition
         (identifier)))
 
-===
+=====================
 Scenario without text
 :error
-===
+=====================
 
 Feature: this is a test
 

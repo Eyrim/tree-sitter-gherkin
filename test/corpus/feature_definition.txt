@@ -1,6 +1,7 @@
-=============================
-Feature declaration with text
-=============================
+===========================================================
+Feature declaration with text cannot stand without scenario
+:error
+===========================================================
 
 Feature: I am a test feature for basic text
 
@@ -10,10 +11,10 @@ Feature: I am a test feature for basic text
     (feature_definition
         (identifier)))
 
-================================
-Feature declaration without text
+=============================================================
+Feature declaration without text canot stand without scenario
 :error
-================================
+=============================================================
 
 Feature:
 
