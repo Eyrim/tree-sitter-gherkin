@@ -1,0 +1,25 @@
+=============================
+Feature declaration with text
+=============================
+
+Feature: I am a test feature for basic text
+
+---
+
+(source_file
+    (feature_definition
+        (identifier)))
+
+================================
+Feature declaration without text
+:error
+================================
+
+Feature:
+
+---
+
+(source_file
+    (feature_definition
+        (feature_name
+            identifier)))
