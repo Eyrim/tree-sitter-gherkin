@@ -1,0 +1,34 @@
+===
+Scenario with text
+===
+
+Feature: this is a test
+
+Scenario: i am a test Scenario
+
+---
+
+(source_file
+    (feature_definition
+        (identifier))
+        
+    (scenario_definition
+        (identifier)))
+
+===
+Scenario without text
+:error
+===
+
+Feature: this is a test
+
+Scenario:
+
+---
+
+(source_file
+    (feature_definition
+        (identifier))
+        
+    (scenario_definition
+        (identifier)))
