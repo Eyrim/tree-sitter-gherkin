@@ -19,7 +19,8 @@ module.exports = grammar({
             'Scenario:',
             ' ',
             $.identifier,
-            repeat1(
+            // Spec allows for scenarios with no steps
+            repeat(
                 $.step_definition,
             ),
         ),
