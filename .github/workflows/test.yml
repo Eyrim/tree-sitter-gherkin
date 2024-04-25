@@ -33,10 +33,6 @@ jobs:
     if: github.ref == 'refs/heads/main'
 
     steps:
-      - name: Install tree-sitter cli
-        shell: bash
-        run: npm install tree-sitter-cli
-
       - name: Generate parser and test it
         shell: bash
-        run: tree-sitter test
+        run: npm test

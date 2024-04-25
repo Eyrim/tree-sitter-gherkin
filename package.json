@@ -17,6 +17,7 @@
   },
   "scripts": {
     "install": "node-gyp-build",
+    "test": "tree-sitter test",
     "prebuildify": "prebuildify --napi --strip"
   },
   "types": "bindings/node",
