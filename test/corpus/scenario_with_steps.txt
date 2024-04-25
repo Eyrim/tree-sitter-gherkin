@@ -40,3 +40,69 @@ Scenario: scenario with one given step
                 (identifier))
             (step_definition
                 (identifier))))
+
+============================================================
+Scenario with two given steps that start with the word given
+============================================================
+
+Feature: test feature
+
+Scenario: scenario with one given step
+    Given there is a step
+    Given given is another step
+
+---
+
+(source_file
+    (feature_definition
+        (identifier))
+        
+    (scenario_definition
+        (identifier)
+            (step_definition
+                (identifier))
+            (step_definition
+                (identifier))))
+
+===========================
+Scenario with one when step
+===========================
+
+Feature: test feature
+
+Scenario: scenario with one given step
+    When there is a step
+
+---
+
+(source_file
+    (feature_definition
+        (identifier))
+        
+    (scenario_definition
+        (identifier)
+            (step_definition
+                (identifier))))
+
+============================
+Scenario with two when steps
+============================
+
+Feature: test feature
+
+Scenario: scenario with one given step
+    When there is a step
+    When given is another step
+
+---
+
+(source_file
+    (feature_definition
+        (identifier))
+        
+    (scenario_definition
+        (identifier)
+            (step_definition
+                (identifier))
+            (step_definition
+                (identifier))))
