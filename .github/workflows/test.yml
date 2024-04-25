@@ -35,7 +35,4 @@ jobs:
     steps:
       - name: Generate parser and test it
         shell: bash
-        run: |
-          npm install
-          npm run build
-          tree-sitter test
+        run: tree-sitter test
