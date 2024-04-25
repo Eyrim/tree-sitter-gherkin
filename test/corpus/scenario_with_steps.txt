@@ -1,0 +1,42 @@
+============================
+Scenario with one given step
+============================
+
+Feature: test feature
+
+Scenario: scenario with one given step
+    Given there is a step
+
+---
+
+(source_file
+    (feature_definition
+        (identifier))
+        
+    (scenario_definition
+        (identifier)
+            (step_definition
+                (identifier))))
+
+=============================
+Scenario with two given steps
+=============================
+
+Feature: test feature
+
+Scenario: scenario with one given step
+    Given there is a step
+    Given there is another step
+
+---
+
+(source_file
+    (feature_definition
+        (identifier))
+        
+    (scenario_definition
+        (identifier)
+            (step_definition
+                (identifier))
+            (step_definition
+                (identifier))))

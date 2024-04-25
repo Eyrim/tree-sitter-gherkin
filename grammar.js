@@ -18,7 +18,23 @@ module.exports = grammar({
         scenario_definition: $ => seq(
             'Scenario:',
             ' ',
-            $.identifier
+            $.identifier,
+            repeat1(
+                $.step_definition,
+            ),
+        ),
+
+        step_definition: $ => seq(
+            choice(
+                "Given",
+                "When",
+                "Then",
+                "And",
+                "But",
+                "*",
+            ),
+            ' ',
+            $.identifier,
         ),
 
         identifier: $ => /([A-z]| )+/
