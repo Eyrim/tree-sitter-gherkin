@@ -35,4 +35,7 @@ jobs:
     steps:
       - name: Generate parser and test it
         shell: bash
-        run: npm test
+        run: |
+          npm install
+          npm run build
+          npm test
