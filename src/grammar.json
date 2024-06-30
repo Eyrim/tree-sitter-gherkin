@@ -48,6 +48,55 @@
         {
           "type": "SYMBOL",
           "name": "identifier"
+        },
+        {
+          "type": "REPEAT",
+          "content": {
+            "type": "SYMBOL",
+            "name": "step_definition"
+          }
+        }
+      ]
+    },
+    "step_definition": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "CHOICE",
+          "members": [
+            {
+              "type": "STRING",
+              "value": "Given"
+            },
+            {
+              "type": "STRING",
+              "value": "When"
+            },
+            {
+              "type": "STRING",
+              "value": "Then"
+            },
+            {
+              "type": "STRING",
+              "value": "And"
+            },
+            {
+              "type": "STRING",
+              "value": "But"
+            },
+            {
+              "type": "STRING",
+              "value": "*"
+            }
+          ]
+        },
+        {
+          "type": "STRING",
+          "value": " "
+        },
+        {
+          "type": "SYMBOL",
+          "name": "identifier"
         }
       ]
     },
